@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 3 способ - создание отдельного файла styles.css и привязка его к файлам html
+         Привязка происходит с помощью тега link внутри head -->
+         <link rel="stylesheet" href="./styles.css" type="text/css">
+        <title>Lesson 2: HTML&CSS</title>
+        <!-- 2 способ - описать css свойства вместе с селектором(ами) в теге style -->
+         <style>
+            a {
+                color: red;
+                font-size: 24px;
+            }
+         </style>
+    </head>
+    <body>
+        <div id="root">
+        <header>
+            <!-- 1 способ - inline стили, через атрибут style -->
+            <h1
+            style="color:rgb(29, 185, 178); font-size: 40px;"
+            >User app</h1>
+            <nav>
+                <a href="https://www.google.com/" target="_blank">Google</a>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="https://de.wikipedia.org/" target="_blank">Wikipedia</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2> <span id="company-name">Company</span> info</h2>
+                <p>Some company info</p>
+            </section>
+            <section>
+                <h2>Information about users</h2>
+                <div class="main-user">
+                    <h3>Brad Pitt</h3>
+                <p>Age: 50</p>
+                </div>
+                <div class="main-user">
+                    <h3>Jonny Depp</h3>
+                <p>Age: 52</p>
+                </div>
+                <div>
+                    <h3>George Clooney</h3>
+                <p>Age: 60</p>
+                </div>
+            </section>
+        </main>
+    </div>
+        <footer>About company</footer>
+        <!-- Пример block и inline элементов (контейнеров div и span)
+         <h2>Ссылки на удалённые источники</h2>
+         <p>Тут будут ссылки на <span>Google</span>, Facebook, Wikipedia</p>
+         <a href="https://www.google.com/" target="_blank">Google</a>
+         <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+         <div>
+            <a href="https://de.wikipedia.org/" target="_blank">Wikipedia</a>
+         </div>
+         <div>Box1</div>
+         <div>Box2</div>
+         <span>Some info1</span>
+         <span>Some info2</span> -->
+    </body>
+</html>
