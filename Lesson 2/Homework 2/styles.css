@@ -1,0 +1,69 @@
+/* 
+font-size - размер текста
+color - цвет текста
+font-weight - толщина шрифта
+text-decoration - внешний вид декоративных линий в тексте
+background-color - изменяет цвет фона
+height - высота (px или %)
+*/
+
+html, body {
+    height: 100px;
+}
+
+#root {
+    background-color: bisque;
+}
+
+#Name {
+    color: orangered;
+    font-size: 35px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.Navigation {
+    background-color: rgb(209, 89, 113);
+}
+
+.Nav_List {
+    color: rgb(3, 26, 3);
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.Summary_Info {
+    background-color: cornflowerblue;
+    color: rgb(3, 26, 3);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Education_Info {
+    background-color: rgb(104, 199, 154);
+    color: rgb(3, 26, 3);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Biography_Info {
+    background-color: rgb(248, 246, 128);
+    color: rgb(3, 26, 3);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Projects_Section {
+    background-color: rgb(154, 88, 207);
+    color: rgb(3, 26, 3);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Footer_Info {
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+
