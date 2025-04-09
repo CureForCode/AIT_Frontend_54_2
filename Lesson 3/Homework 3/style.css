@@ -1,0 +1,57 @@
+.corvette {
+    box-sizing: border-box;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    border: 2px solid goldenrod;
+    margin: 30px;
+    font-size: medium;
+    background-color: bisque;
+    color: maroon;
+}
+
+.corvette_image {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 15px;
+ }
+
+ 
+ 
+ .impala {
+    box-sizing: border-box;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    border: 2px solid goldenrod;
+    margin: 30px;
+    font-size: medium;
+    background-color: bisque;
+    color: maroon;
+}
+
+.impala_image {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 15px;
+ }
+
+ 
+ 
+ .caprice {
+    box-sizing: border-box;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    border: 2px solid goldenrod;
+    margin: 30px;
+    font-size: medium;
+    background-color: bisque;
+    color: maroon;
+}
+
+.caprice_image {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 15px; 
+ }
