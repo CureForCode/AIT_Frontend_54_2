@@ -3,30 +3,27 @@
 }
 
 .auto {
-  box-sizing: border-box;
   width: 400px;
-  height: 500px;
+  min-height: 500px;
+  max-height: fit-content;
   padding: 20px;
   margin: 30px;
+  border: 2px solid goldenrod;
   font-size: medium;
   background-color: bisque;
   color: maroon;
 }
 
 .auto-image {
-  width: 350px;
+  width: 360px;
   height: 250px;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 
-.corvette {
-  border: 2px solid goldenrod;
-}
-
-.impala {
+#impala {
   border: 2px dashed teal;
 }
 
-.caprice {
+#caprice {
   border: 2px dotted purple;
 }
