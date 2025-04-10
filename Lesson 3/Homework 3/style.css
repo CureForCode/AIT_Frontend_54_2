@@ -1,32 +1,32 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
 .auto {
-    box-sizing: border-box;
-    width: 400px;
-    height: 500px;
-    padding: 20px;
-    margin: 30px;
-    font-size: medium;
-    background-color: bisque;
-    color: maroon;
+  box-sizing: border-box;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  margin: 30px;
+  font-size: medium;
+  background-color: bisque;
+  color: maroon;
 }
 
 .auto-image {
-    width: 350px;
-    height: 250px;
-    margin-bottom: 15px;
+  width: 350px;
+  height: 250px;
+  margin-bottom: 15px;
 }
 
 .corvette {
-    border: 2px solid goldenrod; 
+  border: 2px solid goldenrod;
 }
 
 .impala {
-    border: 2px dashed teal;
+  border: 2px dashed teal;
 }
 
 .caprice {
-    border: 2px dotted purple; 
+  border: 2px dotted purple;
 }
