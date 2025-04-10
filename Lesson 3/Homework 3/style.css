@@ -1,57 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+
+.auto {
+    box-sizing: border-box;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    margin: 30px;
+    font-size: medium;
+    background-color: bisque;
+    color: maroon;
+}
+
+.auto-image {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
 .corvette {
-    box-sizing: border-box;
-    width: 400px;
-    height: 500px;
-    padding: 20px;
-    border: 2px solid goldenrod;
-    margin: 30px;
-    font-size: medium;
-    background-color: bisque;
-    color: maroon;
+    border: 2px solid goldenrod; 
 }
 
-.corvette_image {
-    width: 350px;
-    height: 250px;
-    margin-bottom: 15px;
- }
-
- 
- 
- .impala {
-    box-sizing: border-box;
-    width: 400px;
-    height: 500px;
-    padding: 20px;
-    border: 2px solid goldenrod;
-    margin: 30px;
-    font-size: medium;
-    background-color: bisque;
-    color: maroon;
+.impala {
+    border: 2px dashed teal;
 }
 
-.impala_image {
-    width: 350px;
-    height: 250px;
-    margin-bottom: 15px;
- }
-
- 
- 
- .caprice {
-    box-sizing: border-box;
-    width: 400px;
-    height: 500px;
-    padding: 20px;
-    border: 2px solid goldenrod;
-    margin: 30px;
-    font-size: medium;
-    background-color: bisque;
-    color: maroon;
+.caprice {
+    border: 2px dotted purple; 
 }
-
-.caprice_image {
-    width: 350px;
-    height: 250px;
-    margin-bottom: 15px; 
- }
