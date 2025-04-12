@@ -1,0 +1,110 @@
+/* display - это св-во, которое решает как эелемент будет отображаться на странице и с какими св-ами */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/*  display: flex - позволяет управлять элементами используя flexbox, это св-во дается родителю всех элементов, которыми вы хотите управлять */
+/* Flex св-ва только для родителя:
+1. flex-direction -меняет направление(Вертикально/ горизонтально) вдоль которых будут распологаться элементы
+- row - используется по умолчанию, распологает элементы в род контейнере по горизонтали
+- column - распологает элементы в род контейнере по вертикали
+- row-reverse - распологает элементы в строку, но переносит в конец главное(main) оси и меняет элементы местами(полностью наоборот)
+ - column-reverse - распологает элементы в столбец, но переносит в конец главное(main) оси и меняет элементы местами(полностью наоборот)
+*/
+/* 2. gap - отстпуы между элементами внутри родительского flex контейнера */
+/* 3. flex-wrap - св-во, которое отвечает за то как наши элементы переносятся на другую строку, при сужении экрана
+- nowrap - по умолчанию, элементы не переносятся на другую строку
+- wrap - элемены переносятся на другую строку, начиная с последнего и он переносится вниз */
+/* - wrap-reverse - элемены переносятся на другую строку, начиная с последнего вверх,  итоге первы элемент оказывается в самом низу */
+/* 4. flex:1 - говорит элементу занять все возможное пространство в контейнере в котором он находится */
+/* 5. justify-content - позволяет распологать элементы в вдоль main axis 
+6. align-items - позволяет распологать элементы в вдоль cross axis  */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(241, 239, 211);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+#brand-name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation a {
+  text-decoration: overline;
+  color: #333;
+  margin-left: 40px;
+}
+
+.auto-card {
+  width: 400px;
+  min-height: 500px;
+  padding: 20px;
+  margin: 30px;
+  border: 2px solid goldenrod;
+  font-size: medium;
+  background-color: bisque;
+  color: maroon;
+}
+
+.auto-image {
+  width: 360px;
+  height: 250px;
+  margin-bottom: 50px;
+}
+
+.auto-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #000000;
+  color: white;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+}
