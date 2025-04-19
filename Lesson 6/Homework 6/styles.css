@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: rgb(241, 239, 211);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+#brand-name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 40px;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+.navigation a:focus {
+  border-color: rgb(36, 201, 3);
+}
+
+.navigation a:hover {
+  background-color: bisque;
+}
+
+.auto-card {
+  width: 100%;
+  max-width: 400px;
+  min-height: 500px;
+  padding: 20px;
+  margin: 30px;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  font-size: medium;
+  background-color: bisque;
+  color: maroon;
+  position: relative;
+}
+
+.auto-image {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.auto-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+  padding-top: 120px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.available {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #008000;
+}
+
+.order {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.available,
+.order {
+  background-color: rgba(255, 245, 220, 0.8);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #000000;
+  color: white;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+}
