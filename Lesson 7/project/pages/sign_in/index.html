@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Gallery</title>
+    <link
+      rel="stylesheet"
+      href="../../commonStyles/globalStyles.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../commonStyles/elements.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <div id="root">
+      <header class="about_header">
+          <a id="label_style_header" href="../../index.html">FilmLab</a>
+        <nav>
+        
+          <a class="navi_link" href="../about/index.html">О нас </a>
+          <a class="navi_link" href="../gallery/index.html">Галерея</a>
+          <a class="navi_link" href="../contacts/index.html">Обратная связь</a>
+          <a class="navi_link" href="index.html">Вход / Регистрация</a>
+
+        </nav>
+      </header>
+      <main class="sign_in_main">
+        <form class="user_form">
+          <p class="user_form_title">Вход / Регистрация</p>
+          <div class="user_input_container">
+            <label class="user_form_label" for="user_name">Имя пользователя*</label>
+            <input
+              autofocus
+              required
+              id="user_name"
+              class="user_form_input"
+              placeholder="Введите ваше имя"
+              name="name"
+              
+            />
+          </div>
+          <div class="user_input_container">
+            <label class="user_form_label" for="user_email">Email*</label>
+            <input
+              required
+              id="user_email"
+              class="user_form_input"
+              placeholder="Введите ваш email"
+              type="email"
+              name="email"
+            />
+          
+          </div>
+          <div class="checkbox_container">
+            <input
+              id="user_checkbox_input"
+              class="user_checkbox"
+              type="checkbox"
+              name="agree"
+            />
+            <label class="user_form_label" for="user_checkbox_input"
+              >Соглашаюсь с правилами 
+            </label>
+          </div>
+          <button type="submit" class="button">ВОЙТИ</button>
+          <div class="button_sign_in_container">
+          <button id="button_sign_in" type="" class="button">
+            РЕГИСТРАЦИЯ
+          </button>
+        </div>
+        </form>
+      </main>
+      <footer>
+        <div class="label_style_footer">FilmLab</div>
+        <a class="navi_link_footer" href="#">Copyright</a>
+        <p class="label_footer">+49 123 456 789</p>
+        <p class="label_footer">
+          E-mail:
+          <a  id="link_email"    href="#" target="_blank" title="Ссылка на...."
+            >info.@filmlab.com</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

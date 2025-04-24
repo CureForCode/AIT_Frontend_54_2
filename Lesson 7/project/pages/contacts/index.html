@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Contacts</title>
+    <link
+      rel="stylesheet"
+      href="../../commonStyles/globalStyles.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../commonStyles/elements.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <div id="root">
+      <header class="about_header">
+        <a id="label_style_header" href="../../index.html">FilmLab</a>
+        <nav>
+          <a class="navi_link" href="../about/index.html">О нас </a>
+          <a class="navi_link" href="../gallery/index.html">Галерея</a>
+          <a class="navi_link" href="index.html">Обратная связь</a>
+          <a class="navi_link" href="../sign_in/index.html"
+            >Вход / Регистрация</a
+          >
+        </nav>
+      </header>
+      <main class="contact_main">
+        <form class="contact_us">
+          <h1 class="contact_us_title">Связаться с администрацией сайта</h1>
+          <p>* Поля со звёздочкой обязательны для заполнения</p>
+          <div class="contact_us_container">
+            <label class="contact_us_label" for="name">Ваше Имя *</label>
+            <input
+              class="contact_us_input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ваше Имя"
+              required
+            />
+          </div>
+          <div class="contact_us_container">
+            <label class="contact_us_label" for="email">E‑mail Адрес *</label>
+            <input
+              class="contact_us_input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="address@mail.com"
+              required
+            />
+          </div>
+          <div class="contact_us_container">
+            <label class="contact_us_label" for="subject">Тема *</label>
+            <input
+              class="contact_us_input"
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Тема письма"
+              required
+            />
+          </div>
+          <div class="contact_us_container">
+            <label class="contact_us_label" for="message">Сообщение *</label>
+            <textarea
+              class="contact_us_input"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+          </div>
+          <div class="contact_us_checkbox_container">
+            <input
+              class="contact_us_checkbox"
+              type="checkbox"
+              id="info_confirm"
+              name="info_confirm"
+              required
+            />
+            <label for="info_confirm">Вы ввели всю информацию?</label>
+          </div>
+          <button class="send_request" type="submit">
+            Отправить Сообщение
+          </button>
+          <button class="clear_form" type="reset">Очистить Форму</button>
+        </form>
+      </main >
+      <footer>
+        <div class="label_style_footer">FilmLab</div>
+        <a class="navi_link_footer" href="#">Copyright</a>
+        <p class="label_footer">+49 123 456 789</p>
+        <p class="label_footer">
+        E-mail:
+        <a id="link_email"   href="#" target="_blank" title="Ссылка на...."
+          >info.@filmlab.com</a
+        >
+      </p>
+
+      </footer>
+    </div>
+  </body>
+</html>

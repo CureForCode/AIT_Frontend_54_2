@@ -1,0 +1,13 @@
+.about_header{
+  background:linear-gradient(to bottom, rgb(69, 69, 105), rgb(41, 41, 52));
+}
+.about_main{
+  padding: 180px 100px 40px 100px;
+  background-image: url("https://t4.ftcdn.net/jpg/06/42/06/11/240_F_642061192_6j18hweXVFwRLO2xRgU0pmNEbj2wcqOa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: rgb(254, 255, 240);
+  
+
+}
