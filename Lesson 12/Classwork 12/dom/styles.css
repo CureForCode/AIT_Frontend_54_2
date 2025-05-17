@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 30px;
+  gap: 30px;
+  background-color: rgb(26, 35, 53);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.box,
+#lesson-title {
+  color: white;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 500px;
+  min-height: 200px;
+  height: fit-content;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 40px;
+  background-color: white;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: purple;
+}
+
+.user-info {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.show-card {
+  outline: none;
+  border: none;
+  background-color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+  width: 300px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.remove-button {
+  outline: none;
+  border: none;
+  background-color: red;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+  width: 300px;
+  height: 70px;
+  cursor: pointer;
+}
