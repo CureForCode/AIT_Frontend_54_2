@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head lang="en">
+    <title>Homework 12: Calc ideal weight</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div id="root">
+      <form class="calc-form">
+        <h1 class="form-title">Calc ideal weight</h1>
+        <div class="input-container">
+          <label class="input-label" for="height-input"> Рост, см* </label>
+          <input
+            id="height-input"
+            name="height"
+            type="number"
+            placeholder="Введите свой рост"
+            required
+          />
+        </div>
+        <div class="select-container">
+          <label class="select-label" for="gender-select">
+            Выберите пол*
+          </label>
+          <select id="gender-select" name="gender" required>
+            <option value="" disabled selected>— выберите пол —</option>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+          </select>
+        </div>
+        <button class="calc-button" type="submit">Рассчитать</button>
+      </form>
+    </div>
+  </body>
+</html>
