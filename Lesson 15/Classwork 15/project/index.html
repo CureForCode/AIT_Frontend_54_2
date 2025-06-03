@@ -1,0 +1,87 @@
+<!-- 1. Приложение должно быть одностраничным. В верхней части экрана должен находиться header, в нижней — footer, а между ними — main, занимающий всё оставшееся пространство.
+2. Header должен быть зафиксирован в верхней части экрана.
+3. Контент для header и footer — на ваше усмотрение.
+4. В main-части необходимо отобразить данные из массива объектов (массив объектов products можно найти в LMS на вкладке "Code") в виде карточек товаров.
+5. Каждая карточка товара должна содержать:
+- изображение товара;
+- название товара;
+- цену;
+- пол;
+- статус.
+6. (Опционально, задание со звёздочкой) Над карточками должны быть три select-элемента:
+- label: "Gender", опции: "Men", "Women";
+- label: "Price", опции: на ваше усмотрение, главное, чтобы было несколько опций, каждая из которых соответствует определённому диапазону цен (например, 0–200$);
+- label: "Choose product", опции: "Jeans", "T-shirt", "Jacket", "Sweater".
+7. (Опционально, задание со звёздочкой) Справа от select-элементов должна находиться кнопка "Search". При нажатии на неё товары должны фильтроваться, и отображаться только те карточки, которые соответствуют выбранным опциям в фильтрах.
+8. Приложение должно быть на английском языке.
+9. Стили — на ваше усмотрение.
+10. Если выполнено задание со звёздочкой (с фильтрами): в правом нижнем углу экрана должна быть стрелка "вверх" с текстом "Return to filters". При нажатии на неё пользователь должен перемещаться к фильтрам. 
+Этот элемент должен иметь фиксированную позицию. Если задание со звёздочкой не выполнено: в правом нижнем углу экрана должна быть стрелка "вверх" с текстом "Go Up". При нажатии на неё пользователь должен перемещаться к верхней части экрана. 
+Этот элемент также должен иметь фиксированную позицию. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothes Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="products.js" defer></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <h1>Clothes Store</h1>
+      </header>
+      <main>
+        <!-- 6. Фильтры -->
+        <section class="filters" id="filters">
+          <label>
+            Gender:
+            <select id="gender-filter">
+              <option value="">All</option>
+              <option value="men">Men</option>
+              <option value="women">Women</option>
+            </select>
+          </label>
+          <label>
+            Price:
+            <select id="price-filter">
+              <option value="">All</option>
+              <option value="0-100">0–100</option>
+              <option value="101-200">101–200</option>
+              <option value="201-500">201–500</option>
+            </select>
+          </label>
+          <label>
+            Product:
+            <select id="type-filter">
+              <option value="">All</option>
+              <option value="Jacket">Jacket</option>
+              <option value="Sweater">Sweater</option>
+              <option value="T-shirt">T-shirt</option>
+              <option value="Jeans">Jeans</option>
+            </select>
+          </label>
+          <label>
+            Sort by price:
+            <select id="sort-filter">
+              <option value="">Default</option>
+              <option value="asc">Price: Low to High</option>
+              <option value="desc">Price: High to Low</option>
+            </select>
+          </label>
+          <button id="search-button">Search</button>
+          <button id="reset-button">Reset</button>
+        </section>
+        <!-- 4. Контейнер для карточек -->
+        <section class="products-container"></section>
+      </main>
+      <footer>
+        <p>© 2025 Clothes Store</p>
+      </footer>
+    </div>
+    <!-- 10. Кнопка “Return to filters” -->
+    <a href="#filters" class="go-up" id="go-up-btn">⬆ Return to filters</a>
+  </body>
+</html>
