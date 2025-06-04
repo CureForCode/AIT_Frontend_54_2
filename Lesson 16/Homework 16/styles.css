@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  padding: 30px;
+  gap: 30px;
+  background-color: rgb(26, 35, 53);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.square {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border: 5px solid black;
+}
+
+.start-random {
+  background: green;
+  color: #fff;
+  cursor: pointer;
+}
+
+.stop-random {
+  background: red;
+  color: #fff;
+  cursor: pointer;
+}
+
+.start-random,
+.stop-random {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: solid black;
+  width: 500px;
+}
