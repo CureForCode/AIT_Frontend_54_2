@@ -70,3 +70,8 @@ main {
 .stop-random:hover {
   background: red;
 }
+
+.start-random:disabled {
+  background-color: black;
+  cursor: not-allowed;
+}

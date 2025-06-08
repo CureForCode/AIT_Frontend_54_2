@@ -2,8 +2,6 @@ const square = document.querySelector(".square");
 const startBtn = document.querySelector("#start-btn");
 const stopBtn = document.querySelector("#stop-btn");
 
-
-
 //Задание 1
 
 function randomColorFromArray() {
@@ -31,14 +29,16 @@ startBtn.addEventListener("click", () => {
   intervalId = setInterval(() => {
     square.style.backgroundColor = randomColorFromArray();
   }, 3000);
+
+  startBtn.disabled = true;
 });
 
 stopBtn.addEventListener("click", () => {
   clearInterval(intervalId);
   intervalId = null;
+
+  startBtn.disabled = false;
 });
-
-
 
 //Задание 2
 
