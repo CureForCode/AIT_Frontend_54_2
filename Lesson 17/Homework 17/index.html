@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Cat Facts Generator</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="layout">
+        <aside class="instructions">
+          <h2>How to use:</h2>
+          <ol>
+            <li>
+              Press the <strong>“Get Cat Fact”</strong> button to generate a new
+              random cat fact.
+            </li>
+            <li>
+              Press the button again to load more facts. All previous facts will
+              be kept!
+            </li>
+            <li>You can have up to <strong>10 fact cards</strong> at a time.</li>
+            <li>
+              Once you reach 10 cards, pressing the button will clear all cards
+              and start over.
+            </li>
+            <li>Enjoy and discover something new!</li>
+          </ol>
+          <aside class="gif-container"></aside>
+        </aside>
+        <main id="fact-wrapper">
+          <h1 class="generator-title">Random Cat Facts Generator</h1>
+          <form class="fact-card">
+            <div class="facts-grid"></div>
+            <button type="submit" class="get-fact">Get Cat Fact</button>
+          </form>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

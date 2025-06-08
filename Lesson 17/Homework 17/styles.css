@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #383080;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 800px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+#root {
+  background: #fff;
+  padding: 15px;
+  border: 5px solid #383080;
+  width: 900px;
+  max-width: 1200px;
+  min-width: 300px;
+}
+
+.layout {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.instructions {
+  flex: 0 0 240px;
+  background: #f5b4b6;
+  color: black;
+  padding: 15px;
+  border-radius: 4px;
+  line-height: 20px;
+}
+
+.instructions h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.instructions ol {
+  list-style-position: inside;
+}
+
+.instructions li + li {
+  margin-top: 10px;
+}
+
+#fact-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.generator-title {
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 8px;
+  background: #e3c175;
+  color: black;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.fact-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+.facts-grid {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.fact {
+  position: relative;
+  background: #383080;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 200px;
+  min-width: 200px;
+  max-width: 300px;
+  flex-grow: 1;
+}
+
+.fact-number {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: #000;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.fact-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.get-fact {
+  background: green;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.get-fact:hover {
+  opacity: 0.9;
+  color: black;
+}
+
+.gif-container {
+  width: 100%;
+  height: 120px;
+  background-image: url("https://media.tenor.com/1YELlhf9ORsAAAAj/waal-boyss-nabilaa.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* Медиа-запросы для адаптивности */
+/* Эту тему мы еще не изучили, использовал в качестве факультатива, так как было интересно разобраться как все это работает. */
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .instructions {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .gif-container {
+    height: 100px;
+  }
+
+  #fact-wrapper {
+    width: 100%;
+  }
+
+  .facts-grid {
+    gap: 10px;
+  }
+
+  .fact {
+    width: 150px;
+    min-width: 150px;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    padding: 10px;
+    border: 5px solid #383080;
+  }
+
+  .instructions {
+    padding: 10px;
+  }
+
+  .generator-title {
+    font-size: 16px;
+  }
+
+  .get-fact {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .facts-grid {
+    gap: 10px;
+  }
+
+  .fact {
+    width: 100%;
+    min-width: 150px;
+    max-width: 300px;
+  }
+}
