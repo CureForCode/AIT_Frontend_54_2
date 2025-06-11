@@ -1,0 +1,44 @@
+[
+  {
+    "brand": "Les Paul",
+    "model": "Custom Widow Guitar Center-Exclusive",
+    "wood": "Mahogany",
+    "image": "https://media.guitarcenter.com/is/image/MMGS7/M14329000003000-00-2000x2000.jpg",
+    "description": "This Epiphone Les Paul Custom Widow limited-edition electric guitar is a bold reinterpretation of a classic design, offering premium craftsmanship and striking aesthetics."
+  },
+  {
+    "brand": "Dean",
+    "model": "Dimebag Dean From Hell",
+    "wood": "Mahogany",
+    "image": "https://media.guitarcenter.com/is/image/MMGS7/H86404000001000-00-2000x2000.jpg",
+    "description": "The Dean Dimebag Dean From Hell CHF electric guitar puts Dime's favorite body design behind a stunning graphic."
+  },
+  {
+    "brand": "Fender",
+    "model": "Player II Stratocaster HSS",
+    "wood": "Alder",
+    "image": "https://media.guitarcenter.com/is/image/MMGS7/M11734000001000-00-2000x2000.jpg",
+    "description": "The Fender Player II Stratocaster HSS Plus Top maple fingerboard limited-edition electric guitar combines Fender's timeless craftsmanship with modern upgrades for players who demand both style and performance."
+  },
+  {
+    "brand": "Fender",
+    "model": "Squier Sonic Stratocaster Limited-Edition",
+    "wood": "Poplar",
+    "image": "https://media.guitarcenter.com/is/image/MMGS7/L99916000001000-00-2000x2000.jpg",
+    "description": "The Squier Sonic Stratocaster limited-edition electric guitar is ready to launch your musical adventure into warp speed."
+  },
+  {
+    "brand": "Ibanez",
+    "model": "PIA3761 Steve Vai Signature",
+    "wood": "Alder",
+    "image": "https://media.guitarcenter.com/is/image/MMGS7/L72871000005000-00-2000x2000.jpg",
+    "description": "The Ibanez Steve Vai PIA3761 signature electric guitar is the result of Vai's vision."
+  },
+  {
+    "brand": "Schecter",
+    "model": "Guitar Research C-1 Platinum",
+    "wood": "Mahogany",
+    "image": "https://media.guitarcenter.com/is/image/MMGS7/M05564000001000-00-2000x2000.jpg",
+    "description": "The Schecter C-1 Platinum pulls out all the stops in properly setting the stage for that sought-after tone."
+  }
+]
