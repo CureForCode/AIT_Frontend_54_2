@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  <head lang="en">
+    <title>Lesson_20</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <title>Weather App</title>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div id="root">
+      <header
+        id="header"
+        href="./index.html"
+        target="_blank"
+        title="Weather App"
+      >
+        Weather App
+      </header>
+      <main class="main">
+        <form class="form_container">
+          <input
+            id="search_products_input"
+            placeholder="Enter your city"
+            name="city"
+            type="search"
+            autofocus
+          />
+          <button id="search_btn">Search</button>
+        </form>
+        <div id="loading">Loading...</div>
+        <div id="weather_result"></div>
+      </main>
+    </div>
+  </body>
+</html>

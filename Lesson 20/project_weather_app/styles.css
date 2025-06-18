@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+body {
+  background: url("assets/background.jpg") center/cover no-repeat;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#header {
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid #a57fff;
+  padding: 16px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 16px;
+}
+
+/* Форма поиска */
+.form_container {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 16px;
+}
+
+#search_products_input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 16px;
+}
+
+#search_products_input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#search_btn {
+  padding: 0 24px;
+  border: none;
+  border-radius: 50px;
+  background-color: #4285f4;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#search_btn:hover {
+  background-color: #3367d6;
+}
+
+/* Loading… контейнер */
+#loading {
+  display: none;
+  margin-top: 16px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Туда вставляем результат */
+#weather_result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 32px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Карточка погоды */
+.weather-card {
+  width: 100%;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(0, 0, 50, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.weather-card .temp {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.weather-card .city {
+  font-size: 19px;
+  opacity: 0.85;
+}
+
+.weather-card .icons {
+  display: flex;
+  gap: 16px;
+  font-size: 0;
+}
+
+/* Карточка Feels like */
+.feels-card {
+  align-self: flex-start;
+  width: 150px;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(0, 0, 50, 0.8);
+  text-align: center;
+}
+
+.feels-card .title {
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+
+.feels-card .temp {
+  font-size: 32px;
+  line-height: 1;
+}
+
+/* Карточка ошибки */
+.error-card {
+  width: 100%;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(0, 0, 50, 0.6);
+  border: 1px solid #e25a53;
+  text-align: center;
+}
+
+.error-card h2 {
+  color: #e25a53;
+  margin-bottom: 8px;
+}
+
+.error-card p {
+  font-size: 16px;
+  opacity: 0.9;
+}
