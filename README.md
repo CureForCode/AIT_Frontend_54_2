@@ -71,6 +71,6 @@ No libraries or frameworks were used.
 
 Artur Somov
 
-```Full-Stack Developer```
+- Full-Stack Developer
 
 GitHub: https://github.com/CureForCode
